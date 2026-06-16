@@ -2,7 +2,7 @@
   "name": "Water Intake Tracker",
   "short_name": "Water Tracker",
   "description": "Track your daily water intake with a visual progress display",
-  "start_url": "./water-tracker.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#bfdbfe",
   "theme_color": "#0ea5e9",
