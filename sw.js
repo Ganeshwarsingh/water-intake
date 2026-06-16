@@ -1,6 +1,6 @@
 const CACHE_NAME = 'water-tracker-v1';
 const FILES_TO_CACHE = [
-  './water-tracker.html',
+  './index.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png'
@@ -27,7 +27,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((cached) => {
-      return cached || fetch(event.request).catch(() => caches.match('./water-tracker.html'));
+      return cached || fetch(event.request).catch(() => caches.match('./index.html'));
     })
   );
 });
